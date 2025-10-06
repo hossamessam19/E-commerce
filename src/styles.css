@@ -15,7 +15,7 @@
   }
 
   .btn-main {
-    @apply disabled:bg-gray-500 disabled:cursor-not-allowed bg-red-500 text-white py-2 px-5 rounded cursor-pointer hover:bg-red-700 transition-all duration-500;
+    @apply disabled:bg-gray-500 disabled:cursor-not-allowed bg-[#437057] text-white py-2 px-5 rounded cursor-pointer hover:bg-[#2F5249] transition-all duration-500;
   }
 
   .main-input {
@@ -28,7 +28,7 @@
 }
 
 .card {
-  @apply border-4 border-gray-200 shadow-lg p-5 relative rounded-lg hover:border-black hover:border-4 duration-300;
+  @apply border-4 border-gray-200 shadow-lg p-5 relative rounded-lg hover:border-[#2F5249] hover:border-4 duration-300;
 }
 
 :root {}

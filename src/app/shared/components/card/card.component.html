@@ -1,7 +1,7 @@
 <div class="card overflow-hidden group/card">
   <div [routerLink]="['/details', product.slug, product.id]" class="cursor-pointer">
     <img [src]="product.imageCover" class="w-full rounded-t h-[300px] mb-2" [alt]="product.title" />
-    <h3 class="text-sm text-red-600 font-medium mt-2 bg-red-100 inline px-1 rounded">
+    <h3 class="text-sm text-[#2F5249] font-medium mt-2 bg-[#DDF4E7] inline px-1 rounded">
       {{ product.category.name }}
     </h3>
     <h4 class="text-lg py-2 font-bold line-clamp-1">
@@ -9,13 +9,13 @@
     </h4>
     <div class="flex justify-between items-center">
       <span>
-        <span class="text-xl bg-red-100 rounded px-1 text-red-500">{{
+        <span class="text-xl bg-[#DDF4E7] rounded px-1 text-[#2F5249]">{{
           product.price
           }}</span>
         EGP</span>
 
       <span><i class="fas fa-star text-yellow-300 me-2"></i>
-        <span class="bg-red-100 rounded px-1 text-red-700">{{
+        <span class="bg-[#DDF4E7] rounded px-1 text-[#2F5249]">{{
           product.ratingsAverage
           }}</span></span>
     </div>

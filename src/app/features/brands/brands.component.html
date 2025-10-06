@@ -1,6 +1,6 @@
 <section class="bg-white py-16 border border-gray-400">
   <div class="container w-[90%] mx-auto">
-    <h2 class="text-5xl text-red-500 text-center">Brands List</h2>
+    <h2 class="text-5xl text-[#2F5249] text-center">Brands List</h2>
     <div class="parent mt-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       @for (brand of brandsList | paginate: { id: 'foo', itemsPerPage:
       pageSize, currentPage: p, totalItems: total } ; track brand._id) {
@@ -8,7 +8,7 @@
         <div [routerLink]="['/specific-brand', brand.slug, brand._id ]" class="cursor-pointer">
           <img [src]="brand.image" class="w-full rounded-t h-[300px] mb-2" [alt]="brand.name" />
           <hr class="text-gray-400">
-          <h4 class="text-lg py-2 font-bold line-clamp-1 text-center text-red-600 bg-red-100">
+          <h4 class="text-lg py-2 font-bold line-clamp-1 text-center text-[#2F5249] bg-[#DDF4E7]">
             {{ brand.name}}
           </h4>
         </div>

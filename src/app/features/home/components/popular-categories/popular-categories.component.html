@@ -1,14 +1,14 @@
 <section class="py-14">
   <div class="container w-[90%]">
-    <h2 class="text-4xl mb-8 text-red-500 text-center">
+    <h2 class="text-4xl mb-8 text-[#2F5249] text-center">
       Shop Popular Categories
     </h2>
     <owl-carousel-o [options]="categoriesOptions">
       @for (category of categoriesList; track category._id) {
       <ng-template carouselSlide [id]="category._id">
-        <div class="border border-red-500 rounded p-2">
+        <div class="border border-[#2F5249] rounded p-2">
           <img [src]="category.image" class="w-full h-[250px]" [alt]="category.name" />
-          <h3 class="mt-4 text-red-500 font-semibold bg-red-100 text-center rounded">
+          <h3 class="mt-4 text-[#2F5249] font-semibold bg-[#DDF4E7] text-center rounded">
             {{ category.name }}
           </h3>
         </div>
