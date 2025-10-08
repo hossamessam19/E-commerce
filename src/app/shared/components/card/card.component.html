@@ -1,7 +1,7 @@
 <div class="card overflow-hidden group/card">
   <div [routerLink]="['/details', product.slug, product.id]" class="cursor-pointer">
     <img [src]="product.imageCover" class="w-full rounded-t h-[300px] mb-2" [alt]="product.title" />
-    <h3 class="text-sm text-[#2F5249] font-medium mt-2 bg-[#DDF4E7] inline px-1 rounded">
+    <h3 class="text-sm text-orange-600 font-medium mt-2 bg-orange-100 inline px-1 rounded">
       {{ product.category.name }}
     </h3>
     <h4 class="text-lg py-2 font-bold line-clamp-1">
@@ -9,13 +9,13 @@
     </h4>
     <div class="flex justify-between items-center">
       <span>
-        <span class="text-xl bg-[#DDF4E7] rounded px-1 text-[#2F5249]">{{
+        <span class="text-xl bg-orange-100 rounded px-1 text-orange-500">{{
           product.price
           }}</span>
         EGP</span>
 
       <span><i class="fas fa-star text-yellow-300 me-2"></i>
-        <span class="bg-[#DDF4E7] rounded px-1 text-[#2F5249]">{{
+        <span class="bg-orange-100 rounded px-1 text-orange-700">{{
           product.ratingsAverage
           }}</span></span>
     </div>
@@ -23,11 +23,11 @@
 
   <div class="flex items-center space-x-3">
     <button (click)="addProducrItemToCart(product.id)"
-      class="btn-main mt-4 w-full translate-y-[160%] group-hover/card:translate-y-0">
+      class="btn-main mt-4 w-full md:translate-y-[160%] md:group-hover/card:translate-y-0">
       ADD TO CART
     </button>
     <button (click)="addProducrItemToWishlist(product.id)"
-      class="btn-main mt-4 w-25 translate-y-[180%] group-hover/card:translate-y-0 hover:text-red-600">
+      class="btn-main mt-4 w-25 md:translate-y-[180%] md:group-hover/card:translate-y-0 hover:text-red-600">
       <i class="fa solid fa-heart"></i>
     </button>
   </div>
